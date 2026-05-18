@@ -11,83 +11,334 @@
 </head>
 <body>
 
-<header>
-  <div class="logo">ARENAX</div>
-
+<header id="top-header">
+  <div class="logo">ARENA<span>X</span></div>
   <nav>
     <a href="#inicio">Início</a>
     <a href="#sobre">Institucional</a>
     <a href="#dashboard">Dashboard</a>
     <a href="#inscricao">Inscrição</a>
   </nav>
-
   <a href="#inscricao" class="btn">Participar</a>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
 </header>
 
+<div class="mobile-nav" id="mobile-nav">
+  <a href="#inicio" class="mobile-link">Início</a>
+  <a href="#sobre" class="mobile-link">Institucional</a>
+  <a href="#dashboard" class="mobile-link">Dashboard</a>
+  <a href="#inscricao" class="mobile-link">Inscrição</a>
+</div>
+
 <section class="hero" id="inicio">
-  <div class="hero-text">
+  <div class="hero-bg-lines" aria-hidden="true">
+    <div class="line"></div><div class="line"></div><div class="line"></div>
+    <div class="line"></div><div class="line"></div>
+  </div>
+  <div class="hero-text" data-animate>
+    <span class="badge">Temporada 2026 · Aberta</span>
     <h1>Gestão de torneios com prestígio e precisão.</h1>
-    <p>
-      ArenaX transforma campeonatos em experiências premium.
-      Uma plataforma elegante e inteligente para clubes e organizadores.
-    </p>
-    <a href="#dashboard" class="btn">Explorar sistema</a>
+    <p>ArenaX transforma campeonatos em experiências premium. Uma plataforma elegante e inteligente para clubes e organizadores de alto nível.</p>
+    <div class="hero-actions">
+      <a href="#dashboard" class="btn btn-primary">Explorar sistema</a>
+      <a href="#sobre" class="btn btn-ghost">Saiba mais →</a>
+    </div>
   </div>
 
-  <div class="hero-card">
-    <h3>Quadro de Honra</h3>
+  <div class="hero-card" data-animate data-delay="200">
+    <div class="hero-card-header">
+      <h3>Quadro de Honra</h3>
+      <span class="live-badge"><span class="pulse"></span> AO VIVO</span>
+    </div>
     <div class="stats">
-      <div class="stat"><h4>128</h4><p>Atletas</p></div>
-      <div class="stat"><h4>32</h4><p>Torneios</p></div>
-      <div class="stat"><h4>18</h4><p>Clubes</p></div>
+      <div class="stat" data-count="128"><h4 class="counter">128</h4><p>Atletas</p></div>
+      <div class="stat" data-count="32"><h4 class="counter">32</h4><p>Torneios</p></div>
+      <div class="stat" data-count="18"><h4 class="counter">18</h4><p>Clubes</p></div>
       <div class="stat"><h4>96%</h4><p>Satisfação</p></div>
+    </div>
+    <div class="top-teams">
+      <p class="section-label">Top Equipes</p>
+      <div class="team-row gold">
+        <span class="rank">🥇</span>
+        <span class="team-name">Lions Club</span>
+        <span class="team-pts">89 pts</span>
+      </div>
+      <div class="team-row silver">
+        <span class="rank">🥈</span>
+        <span class="team-name">Heritage Team</span>
+        <span class="team-pts">82 pts</span>
+      </div>
+      <div class="team-row bronze">
+        <span class="rank">🥉</span>
+        <span class="team-name">Storm FC</span>
+        <span class="team-pts">77 pts</span>
+      </div>
     </div>
   </div>
 </section>
 
 <section id="sobre">
-  <h2>Institucional</h2>
+  <div class="section-header" data-animate>
+    <span class="section-tag">Por que ArenaX</span>
+    <h2>Institucional</h2>
+    <p class="section-desc">Tudo que um torneio de alto nível precisa, em uma única plataforma.</p>
+  </div>
   <div class="cards">
-    <div class="card">Curadoria Premium</div>
-    <div class="card">Automação Completa</div>
-    <div class="card">Escalabilidade</div>
+    <div class="card" data-animate>
+      <div class="card-icon">✦</div>
+      <h3>Curadoria Premium</h3>
+      <p>Cada torneio recebe atenção individual. Regras personalizadas, chaveamento inteligente e relatórios detalhados.</p>
+    </div>
+    <div class="card" data-animate data-delay="100">
+      <div class="card-icon">⚡</div>
+      <h3>Automação Completa</h3>
+      <p>Geração de chaves, notificações automáticas e atualização de resultados em tempo real, sem esforço manual.</p>
+    </div>
+    <div class="card" data-animate data-delay="200">
+      <div class="card-icon">◈</div>
+      <h3>Escalabilidade</h3>
+      <p>De 8 a 512 equipes. A ArenaX cresce com o seu torneio sem comprometer desempenho ou experiência.</p>
+    </div>
+  </div>
+
+  <div class="features-strip" data-animate>
+    <div class="feature-item"><span>📊</span> Relatórios em PDF</div>
+    <div class="feature-item"><span>🔔</span> Notificações Push</div>
+    <div class="feature-item"><span>🌐</span> Página pública do torneio</div>
+    <div class="feature-item"><span>🏅</span> Medalhas digitais</div>
+    <div class="feature-item"><span>📱</span> App mobile incluso</div>
   </div>
 </section>
 
 <section class="dashboard" id="dashboard">
-  <h2>Dashboard do Torneio</h2>
-  <table>
-    <tr>
-      <th>Posição</th>
-      <th>Equipe</th>
-      <th>Pontos</th>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>Lions Club</td>
-      <td>89</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Heritage Team</td>
-      <td>82</td>
-    </tr>
-  </table>
+  <div class="section-header" data-animate>
+    <span class="section-tag">Classificação</span>
+    <h2>Dashboard do Torneio</h2>
+    <p class="section-desc">Acompanhe resultados em tempo real. Atualizado automaticamente.</p>
+  </div>
+
+  <div class="dashboard-grid">
+
+    <div class="table-wrap" data-animate>
+      <div class="table-header-bar">
+        <span>Torneio Verão 2026</span>
+        <span class="live-badge small"><span class="pulse"></span> Rodada 6/8</span>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Equipe</th>
+            <th>J</th>
+            <th>V</th>
+            <th>D</th>
+            <th>Pts</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="row-top">
+            <td><span class="pos-badge gold">1</span></td>
+            <td><strong>Lions Club</strong></td>
+            <td>6</td><td>5</td><td>1</td>
+            <td><strong>89</strong></td>
+            <td><span class="tag tag-up">↑ +3</span></td>
+          </tr>
+          <tr>
+            <td><span class="pos-badge silver">2</span></td>
+            <td><strong>Heritage Team</strong></td>
+            <td>6</td><td>4</td><td>2</td>
+            <td><strong>82</strong></td>
+            <td><span class="tag tag-same">→</span></td>
+          </tr>
+          <tr>
+            <td><span class="pos-badge bronze">3</span></td>
+            <td><strong>Storm FC</strong></td>
+            <td>6</td><td>4</td><td>2</td>
+            <td><strong>77</strong></td>
+            <td><span class="tag tag-up">↑ +1</span></td>
+          </tr>
+          <tr>
+            <td><span class="pos-badge">4</span></td>
+            <td>Vanguard SC</td>
+            <td>6</td><td>3</td><td>3</td>
+            <td>65</td>
+            <td><span class="tag tag-down">↓ −2</span></td>
+          </tr>
+          <tr>
+            <td><span class="pos-badge">5</span></td>
+            <td>Apex United</td>
+            <td>6</td><td>2</td><td>4</td>
+            <td>51</td>
+            <td><span class="tag tag-same">→</span></td>
+          </tr>
+          <tr>
+            <td><span class="pos-badge">6</span></td>
+            <td>Iron Cross FC</td>
+            <td>6</td><td>1</td><td>5</td>
+            <td>38</td>
+            <td><span class="tag tag-down">↓ −1</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="sidebar-dash" data-animate data-delay="150">
+      <div class="dash-widget">
+        <h4 class="widget-title">Próximas Partidas</h4>
+        <div class="match-list">
+          <div class="match-item">
+            <div class="match-teams">
+              <span>Lions Club</span>
+              <span class="vs">VS</span>
+              <span>Heritage Team</span>
+            </div>
+            <div class="match-info">18/05 · 15h00 · Arena Central</div>
+          </div>
+          <div class="match-item">
+            <div class="match-teams">
+              <span>Storm FC</span>
+              <span class="vs">VS</span>
+              <span>Apex United</span>
+            </div>
+            <div class="match-info">19/05 · 10h00 · Campo Norte</div>
+          </div>
+          <div class="match-item">
+            <div class="match-teams">
+              <span>Vanguard SC</span>
+              <span class="vs">VS</span>
+              <span>Iron Cross FC</span>
+            </div>
+            <div class="match-info">19/05 · 14h00 · Arena Sul</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dash-widget">
+        <h4 class="widget-title">Artilharia</h4>
+        <div class="scorer-list">
+          <div class="scorer-item">
+            <span class="scorer-rank">1</span>
+            <span class="scorer-name">R. Oliveira</span>
+            <span class="scorer-goals">12 gols</span>
+          </div>
+          <div class="scorer-item">
+            <span class="scorer-rank">2</span>
+            <span class="scorer-name">M. Santos</span>
+            <span class="scorer-goals">9 gols</span>
+          </div>
+          <div class="scorer-item">
+            <span class="scorer-rank">3</span>
+            <span class="scorer-name">A. Costa</span>
+            <span class="scorer-goals">7 gols</span>
+          </div>
+          <div class="scorer-item">
+            <span class="scorer-rank">4</span>
+            <span class="scorer-name">P. Lima</span>
+            <span class="scorer-goals">6 gols</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section id="inscricao">
-  <h2>Inscrição</h2>
-  <form>
-    <input type="text" placeholder="Nome da Equipe">
-    <input type="email" placeholder="E-mail">
-    <textarea placeholder="Mensagem"></textarea>
-    <button class="btn">Enviar inscrição</button>
-  </form>
+  <div class="inscricao-inner">
+    <div class="inscricao-text" data-animate>
+      <span class="section-tag">Vagas Limitadas</span>
+      <h2>Inscrição</h2>
+      <p>Preencha o formulário e nossa equipe entrará em contato em até 24 horas para confirmar sua participação.</p>
+      <ul class="inscricao-perks">
+        <li>✔ Página pública da equipe</li>
+        <li>✔ Acesso ao dashboard em tempo real</li>
+        <li>✔ Certificados digitais aos finalistas</li>
+        <li>✔ Transmissão ao vivo das semifinais</li>
+      </ul>
+    </div>
+    <form class="form-card" data-animate data-delay="150" id="inscricao-form">
+      <div class="form-group">
+        <label for="team">Nome da Equipe</label>
+        <input type="text" id="team" placeholder="Ex: Lions Club FC" required>
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail do Responsável</label>
+        <input type="email" id="email" placeholder="contato@equipe.com.br" required>
+      </div>
+      <div class="form-group">
+        <label for="atletas">Número de Atletas</label>
+        <input type="number" id="atletas" placeholder="Ex: 18" min="5" max="30">
+      </div>
+      <div class="form-group">
+        <label for="msg">Mensagem (opcional)</label>
+        <textarea id="msg" placeholder="Conte um pouco sobre sua equipe..." rows="4"></textarea>
+      </div>
+      <button class="btn btn-primary full-width" type="submit">Enviar inscrição</button>
+      <p class="form-note">🔒 Seus dados estão seguros. Não compartilhamos com terceiros.</p>
+    </form>
+  </div>
+
+  <div class="toast" id="toast">✅ Inscrição enviada com sucesso!</div>
 </section>
 
 <footer>
-  <p>© 2026 ArenaX. Todos os direitos reservados.</p>
+  <div class="footer-inner">
+    <div class="logo footer-logo">ARENA<span>X</span></div>
+    <div class="footer-links">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Institucional</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#inscricao">Inscrição</a>
+    </div>
+    <p class="footer-copy">© 2026 ArenaX. Todos os direitos reservados.</p>
+  </div>
 </footer>
 
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (!target) return;
+      e.preventDefault();
+      const offset = 80;
+      window.scrollTo({ top: target.offsetTop - offset, behavior: 'smooth' });
+      document.getElementById('mobile-nav').classList.remove('open');
+    });
+  });
+
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobile-nav');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    mobileNav.classList.toggle('open');
+  });
+
+  const header = document.getElementById('top-header');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 20);
+  });
+
+  const animEls = document.querySelectorAll('[data-animate]');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const delay = e.target.dataset.delay || 0;
+        setTimeout(() => e.target.classList.add('visible'), parseInt(delay));
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  animEls.forEach(el => obs.observe(el));
+
+  document.getElementById('inscricao-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const toast = document.getElementById('toast');
+    toast.classList.add('show');
+    this.reset();
+    setTimeout(() => toast.classList.remove('show'), 3500);
+  });
+</script>
 </body>
 </html>
